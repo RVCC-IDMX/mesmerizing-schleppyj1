@@ -3,7 +3,7 @@
   https://codepen.io/xposedbones/pen/aOrQVy
 */
 :root {
-  --anispeed: 30s;
+  --anispeed: 10s;
 }
 
 body {
@@ -33,6 +33,27 @@ body {
   left: 50%;
   transform: translateX(-50%);
   transform-origin: bottom center;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .circle {
+    border: 13px solid white;
+
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  .circle {
+    border: 13px solid black;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --anispeed: 100s;
+  }
 }
 
 .holder .circle:nth-child(1) {
@@ -536,11 +557,5 @@ body {
 @media (prefers-reduced-motion) {
   .circle {
     animation: circle-16 var(30s) infinite ease-in-out;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: black;
   }
 }
