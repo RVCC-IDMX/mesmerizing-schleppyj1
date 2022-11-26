@@ -1,10 +1,25 @@
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
 
     :root {
         --foreground: white;
         --background: black;
     }
 
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --foreground: black;
+        --background: white;
+    }
+}
+*/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground: white;
+        --background: black;
+    }
 }
 
 @media (prefers-color-scheme: light) {
